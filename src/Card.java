@@ -18,6 +18,6 @@ public class Card {
 	private int suit;				/** refer to final constants **/
 	private int value;				/** A = 1 or 11;  J Q K 10  = 10 **/
 	
-	
 
 }
+
