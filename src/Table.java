@@ -31,7 +31,8 @@ public class Table {
 		
 			case 1:
 				ArrayList<Integer> deck = new ArrayList<Integer>(52);
-				System.out.println(deck.size());			
+				System.out.println(deck.size());	
+			case 2:
 		}
 	}
 	
