@@ -24,7 +24,7 @@ public class Player {
 	public Player (int chips, int level, String id, int sex){
 		this.sex = sex;
 		this.chips = chips;
-		this.level = 0;
+		this.level = level;
 		this.id = id;
 	}
 	
