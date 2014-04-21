@@ -95,12 +95,6 @@ public class tableView extends JFrame {
 		panel.add(button_4);
 		
 		
-		
-		
-		
-		
-		
-		
 		JLabel topLabel = new JLabel("Table " + (tableIndex+1) + " \t\t" + thisTable.getNumOfDecks() + "\t Deck Min: $" + min + "\t Max: $" + max);
 		topLabel.setFont(new Font("Lucida Grande", Font.PLAIN, 20));
 		topLabel.setBounds(168, 22, 407, 36);
