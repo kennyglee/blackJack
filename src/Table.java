@@ -15,48 +15,63 @@ public class Table {
 	private final int maxSeat = 6;  /** Maximum of 6 people per table **/
 	
 	//instance variables
-	private int minBuyIn;			/** Minimum Buy In Allowed at the table **/
-	private int maxBuyIn;			/** Maximum Buy In Allowed at the table **/
+	private int minBet;			/** Minimum Bet Allowed at the table **/
+	private int maxBet;			/** Maximum Bet Allowed at the table **/
 	private int	numOfDecks;			/** Number of decks ( single , double, six deck) **/
 	
 	
 	private ArrayList<Player> listOfPlayers;
 	
-	public Table (int numOfDecks, int minBuyIn, int maxBuyIn) {
+	public Table (int numOfDecks, int minBet, int maxBet) {
 		this.numOfDecks = numOfDecks;
-		this.minBuyIn = minBuyIn;
-		this.maxBuyIn = maxBuyIn;
+		this.minBet = minBet;	
+		this.maxBet = maxBet;
 		
 		switch (this.numOfDecks) {
 		
 			case 1:
 				ArrayList<Integer> deck = new ArrayList<Integer>(52);
 				System.out.println(deck.size());	
-			case 2:
+			case 2:				// not complete
 		}
 	}
 	
-	public int getMinBuyIn() {
-		return this.minBuyIn;
+	/**
+	 * Getter method for minimum Bet for this table
+	 * @return minimum Bet for this table
+	 */
+	public int getMinBet() {
+		return this.minBet;
 	}
 	
-	public int getMaxBuyIn() {
-		return this.maxBuyIn;
+	/**
+	 * Getter method for maximum Bet for this table
+	 * @return maximum Bet for this table
+	 */
+	public int getMaxBet() {
+		return this.maxBet;
 	}
 	
+	/**
+	 * Getter method for getting the number of decks
+	 * @return numOfDecks for this table
+	 */
 	public int getNumOfDecks() {
 		return this.numOfDecks;
 	}
 	
 	public static ArrayList<Integer> fillInDeck(ArrayList<Integer> deck){
-		
+		// not complete
 		return deck;
 	}
 	
 	public static ArrayList<Integer> shuffle(ArrayList<Integer> deck){
-		
+		// not complete
 		return deck;
+	}
 	
+	public ArrayList<Player> getPlayers() {
+		return listOfPlayers;
 	}
 	
 	

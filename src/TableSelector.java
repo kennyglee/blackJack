@@ -115,7 +115,7 @@ public class TableSelector {
 			}
 			
 			public void open() {
-				tableView game = new tableView();
+				TableView game = new TableView();
 				game.setVisible(true);
 			}
 			
