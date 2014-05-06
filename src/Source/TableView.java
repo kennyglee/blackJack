@@ -1,3 +1,4 @@
+package Source;
 import java.awt.BorderLayout;
 import java.awt.EventQueue;
 import java.awt.Font;
@@ -54,10 +55,10 @@ public class TableView extends JFrame {
 	 * Create the frame.
 	 */
 	public TableView(int index, Player thisPlayer) {
-		System.out.println("hi" + index);
+																			// System.out.println("hi" + index);
 		tableNumber = (index);
-		System.out.println("table number " + tableNumber);
-		System.out.println("hello" + index);
+																			// System.out.println("table number " + tableNumber);
+																			// System.out.println("hello" + index);
 		thisTable = TableSelector.tables.get(tableNumber);
 		min = thisTable.getMinBet();
 		max = thisTable.getMaxBet();
@@ -92,10 +93,10 @@ public class TableView extends JFrame {
 		
 		
 		
-		System.out.println("this table's maxBuyIn is = " + thisTable.getMaxBet());
+	/*	System.out.println("this table's maxBuyIn is = " + thisTable.getMaxBet());
 		System.out.println("this table's minBuyIn is = " + thisTable.getMinBet());
 		System.out.println("this table's numOfDeck is = " + thisTable.getNumOfDecks());
-		System.out.println("this table number is = "  + (tableNumber+1));
+		System.out.println("this table number is = "  + (tableNumber+1)); */
 		
 		
 		int x, y; // used for setBounds for button
@@ -170,29 +171,27 @@ public class TableView extends JFrame {
 		button_6.setBounds(605, 304, 60, 19);
 		panel.add(button_6);
 		
-		
-		
-		
-		
-		
-		
+
 		
 		JLabel topLabel = new JLabel("Table " + (tableNumber+1) + " \t\t" + thisTable.getNumOfDecks() + "\t Deck Min: $" + min + "\t Max: $" + max);
 		topLabel.setFont(new Font("Lucida Grande", Font.PLAIN, 20));
 		topLabel.setBounds(168, 22, 407, 36);
 		panel.add(topLabel);
-		
 
-		
 		JLabel lblNewLabelv = new JLabel("");
 		lblNewLabelv.setBounds(6, 22, 700, 500);
 		panel.add(lblNewLabelv);
 		lblNewLabelv.setIcon(new ImageIcon("/Users/Kenny/Google Drive/UCSD/Sophomore/CSE 110/images/table edited final.jpg"));
+	
 		
-		
-		
-		
-		
+	}
+	
+	public Table getThisTable() {
+		return thisTable;
+	}
+	
+	public int getTableNumber() {
+		return (tableNumber+1);
 	}
 	
 	
